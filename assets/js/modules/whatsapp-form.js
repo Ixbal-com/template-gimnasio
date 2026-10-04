@@ -13,7 +13,8 @@ export function initWhatsappForm() {
       const data = new FormData(form);
       const message = (form.dataset.message ?? "")
         .replace(/\{(\w+)\}/g, (_, name) => String(data.get(name) ?? "").trim())
-        .replace(/\s+([.,])/g, "$1");
+        .replace(/\s+([.,])/g, "$1")
+        .trim();
       window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
     });
   }

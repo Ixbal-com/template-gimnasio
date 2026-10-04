@@ -1,7 +1,8 @@
 // Horarios de apertura. Cada [data-hours-scope] (por ejemplo, una sucursal) tiene su
 // tabla [data-hours] y su aviso [data-open-status]; si no hay ámbitos, usa toda la
 // página. Marca el día de hoy y muestra "Abierto ahora" o "Cerrado". Los textos
-// salen de data-text-open y data-text-closed.
+// salen de data-text-open y data-text-closed para que se puedan traducir, y se
+// vuelven a pintar cada minuto y cuando cambia el idioma.
 export function initOpeningHours() {
   const scopes = document.querySelectorAll("[data-hours-scope]");
   const render = () => {
@@ -9,6 +10,7 @@ export function initOpeningHours() {
   };
   render();
   setInterval(render, 60_000);
+  document.addEventListener("i18n:change", render);
 }
 
 function renderScope(scope, now) {
