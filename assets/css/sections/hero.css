@@ -1,0 +1,114 @@
+/* Foto a todo lo ancho con titular gigante y cinta de disciplinas en movimiento. */
+.hero {
+  position: relative;
+  display: grid;
+  align-items: end;
+  min-height: min(90vh, 56rem);
+  padding-block: var(--space-16) var(--space-12);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero > .media {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  aspect-ratio: auto;
+  border-radius: 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(to top, var(--color-scrim) 5%, transparent 65%),
+    linear-gradient(to right, var(--color-scrim) 0%, transparent 70%);
+}
+
+.hero__title {
+  max-width: 11ch;
+  font-size: var(--text-3xl);
+}
+
+.hero__title em {
+  font-style: normal;
+  color: var(--color-primary);
+}
+
+.hero__lead {
+  max-width: 34rem;
+  margin-top: var(--space-6);
+  font-size: var(--text-lg);
+  color: var(--color-text);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+}
+
+.hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6) var(--space-12);
+  margin-top: var(--space-12);
+  padding: 0;
+  list-style: none;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.hero__stats strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+/* Cinta de disciplinas: el contenido va duplicado para que el ciclo no tenga cortes. */
+.marquee {
+  overflow: hidden;
+  border-block: 1px solid var(--color-border);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee__group {
+  display: flex;
+  gap: var(--space-8);
+  padding: var(--space-3) var(--space-4);
+  margin: 0;
+  list-style: none;
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.marquee__group li::after {
+  content: "✦";
+  margin-left: var(--space-8);
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track {
+    animation: none;
+  }
+}

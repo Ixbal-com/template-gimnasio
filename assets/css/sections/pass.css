@@ -1,0 +1,33 @@
+/* Pase gratis: bloque de color con formulario que se envía por WhatsApp. */
+.pass {
+  display: grid;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+@media (min-width: 56rem) {
+  .pass {
+    grid-template-columns: 1.1fr 1fr;
+  }
+}
+
+.pass__title {
+  font-size: calc(var(--text-2xl) * 1.25);
+}
+
+.pass__text {
+  max-width: 30rem;
+  margin-top: var(--space-6);
+  font-size: var(--text-lg);
+}
+
+.pass__form {
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.pass__form .form__note {
+  color: var(--color-text-muted);
+}

@@ -1,0 +1,68 @@
+/* Coaches en carrusel horizontal. */
+.coaches__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-12);
+}
+
+.coaches__hint {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.coaches__track {
+  --track-inset: max(var(--container-gutter), calc((100% - var(--container-width)) / 2));
+  display: grid;
+  grid-auto-columns: min(75vw, 18rem);
+  grid-auto-flow: column;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0 var(--track-inset) var(--space-4);
+  overflow-x: auto;
+  scroll-padding-inline: var(--track-inset);
+  scroll-snap-type: x mandatory;
+  list-style: none;
+}
+
+.coach {
+  scroll-snap-align: start;
+}
+
+.coach .media {
+  border-radius: var(--radius-lg);
+}
+
+.coach__name {
+  margin-top: var(--space-4);
+  font-size: var(--text-xl);
+}
+
+.coach__role {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.coach__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-top: var(--space-3);
+  padding: 0;
+  list-style: none;
+}
+
+.coach__tags li {
+  padding: 0.1rem var(--space-2);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}

@@ -1,0 +1,247 @@
+{
+  "id": "gimnasio",
+  "name": "Club deportivo / Gimnasio multidisciplina",
+  "version": "1.0.0",
+  "category": "deporte",
+  "style": "Oscuro y enérgico: casi negro con verde lima neón; títulos en mayúsculas condensadas (Anton) y texto en Archivo.",
+  "description": "Para gimnasios y clubes con varias disciplinas, clases grupales y una o más sucursales: horario semanal filtrable, membresías y pase gratis por WhatsApp.",
+  "tags": [
+    "gimnasio",
+    "hyrox",
+    "box",
+    "hiit",
+    "spinning",
+    "horario",
+    "membresías",
+    "sucursales",
+    "whatsapp"
+  ],
+  "entry": "index.html",
+  "preview": "preview.png",
+  "sections": [
+    "encabezado",
+    "hero",
+    "disciplinas",
+    "hyrox",
+    "horario",
+    "instalaciones",
+    "membresias",
+    "coaches",
+    "sucursales",
+    "pase-gratis",
+    "pie"
+  ],
+  "imageSlots": [
+    {
+      "id": "hero",
+      "label": "Foto principal: atleta entrenando con intensidad",
+      "ratio": "panorámica (se recorta en móvil)",
+      "recommended": "1600 × 1067 px",
+      "section": "hero"
+    },
+    {
+      "id": "disciplina-hyrox",
+      "label": "Disciplina destacada: Hyrox",
+      "ratio": "rectángulo alto (se recorta)",
+      "recommended": "1600 × 1067 px",
+      "section": "disciplinas"
+    },
+    {
+      "id": "disciplina-fuerza",
+      "label": "Disciplina: fuerza / pesas",
+      "ratio": "panorámica",
+      "recommended": "1600 × 1067 px",
+      "section": "disciplinas"
+    },
+    {
+      "id": "disciplina-box",
+      "label": "Disciplina: box",
+      "ratio": "1:1",
+      "recommended": "1000 × 1000 px",
+      "section": "disciplinas"
+    },
+    {
+      "id": "disciplina-hiit",
+      "label": "Disciplina: HIIT",
+      "ratio": "1:1",
+      "recommended": "1000 × 1000 px",
+      "section": "disciplinas"
+    },
+    {
+      "id": "disciplina-spinning",
+      "label": "Disciplina: spinning",
+      "ratio": "panorámica",
+      "recommended": "1600 × 1067 px",
+      "section": "disciplinas"
+    },
+    {
+      "id": "hyrox-estaciones",
+      "label": "Estación de Hyrox (trineo, remo o SkiErg)",
+      "ratio": "4:3",
+      "recommended": "1600 × 1200 px",
+      "section": "hyrox"
+    },
+    {
+      "id": "instalacion-1",
+      "label": "Área principal del club (piso de pesas)",
+      "ratio": "panorámica",
+      "recommended": "1600 × 1067 px",
+      "section": "instalaciones"
+    },
+    {
+      "id": "instalacion-2",
+      "label": "Zona de recuperación",
+      "ratio": "4:3",
+      "recommended": "1200 × 900 px",
+      "section": "instalaciones"
+    },
+    {
+      "id": "instalacion-3",
+      "label": "Vestidores",
+      "ratio": "4:3",
+      "recommended": "1200 × 900 px",
+      "section": "instalaciones"
+    },
+    {
+      "id": "coach-1",
+      "label": "Retrato de coach 1",
+      "ratio": "4:5",
+      "recommended": "1000 × 1250 px",
+      "section": "coaches"
+    },
+    {
+      "id": "coach-2",
+      "label": "Retrato de coach 2",
+      "ratio": "4:5",
+      "recommended": "1000 × 1250 px",
+      "section": "coaches"
+    },
+    {
+      "id": "coach-3",
+      "label": "Retrato de coach 3",
+      "ratio": "4:5",
+      "recommended": "1000 × 1250 px",
+      "section": "coaches"
+    },
+    {
+      "id": "coach-4",
+      "label": "Retrato de coach 4",
+      "ratio": "4:5",
+      "recommended": "1000 × 1250 px",
+      "section": "coaches"
+    },
+    {
+      "id": "sucursal-roma",
+      "label": "Fachada de la sucursal 1",
+      "ratio": "4:3",
+      "recommended": "1600 × 1200 px",
+      "section": "sucursales"
+    },
+    {
+      "id": "sucursal-delvalle",
+      "label": "Fachada de la sucursal 2",
+      "ratio": "4:3",
+      "recommended": "1600 × 1200 px",
+      "section": "sucursales"
+    },
+    {
+      "id": "sucursal-santafe",
+      "label": "Fachada de la sucursal 3",
+      "ratio": "4:3",
+      "recommended": "1600 × 1200 px",
+      "section": "sucursales"
+    }
+  ],
+  "fields": [
+    {
+      "id": "businessName",
+      "label": "Nombre del club o gimnasio",
+      "type": "text",
+      "required": true,
+      "example": "PULSO Club Deportivo"
+    },
+    {
+      "id": "tagline",
+      "label": "Frase principal",
+      "type": "text",
+      "required": true,
+      "example": "Entrena todo. En un solo lugar."
+    },
+    {
+      "id": "disciplines",
+      "label": "Disciplinas (nombre, descripción e intensidad del 1 al 5)",
+      "type": "list",
+      "required": true,
+      "min": 1,
+      "max": 6
+    },
+    {
+      "id": "schedule",
+      "label": "Horario semanal (día, hora, duración, clase, coach y sucursal)",
+      "type": "list",
+      "required": true
+    },
+    {
+      "id": "plans",
+      "label": "Membresías (nombre, precio mensual, precio anual y qué incluye)",
+      "type": "list",
+      "required": true,
+      "max": 4
+    },
+    {
+      "id": "coaches",
+      "label": "Coaches (nombre, especialidad y disciplinas)",
+      "type": "list",
+      "required": false,
+      "max": 8
+    },
+    {
+      "id": "branches",
+      "label": "Sucursales (nombre, dirección, horario y servicios)",
+      "type": "list",
+      "required": true,
+      "min": 1,
+      "max": 5
+    },
+    {
+      "id": "featuredEvent",
+      "label": "Evento recurrente con cuenta regresiva",
+      "type": "text",
+      "required": false,
+      "example": "Simulacro Hyrox el último sábado de cada mes, 8:00"
+    },
+    {
+      "id": "whatsapp",
+      "label": "WhatsApp (con lada)",
+      "type": "phone",
+      "required": true,
+      "example": "+52 55 4821 9637"
+    },
+    {
+      "id": "phone",
+      "label": "Teléfono",
+      "type": "phone",
+      "required": false,
+      "example": "+52 55 4821 9637"
+    },
+    {
+      "id": "brandColor",
+      "label": "Color de acento",
+      "type": "color",
+      "required": false,
+      "example": "#c6ff2e"
+    },
+    {
+      "id": "logo",
+      "label": "Logo",
+      "type": "image",
+      "required": false
+    },
+    {
+      "id": "social",
+      "label": "Redes sociales",
+      "type": "links",
+      "required": false
+    }
+  ]
+}

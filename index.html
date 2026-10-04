@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO: título y descripción que aparecen en Google -->
+  <title>PULSO Club Deportivo · Hyrox, fuerza, box, HIIT y spinning en CDMX</title>
+  <meta name="description" content="Club deportivo con zona Hyrox, piso de pesas, box, HIIT y spinning en Roma Norte, Del Valle y Santa Fe. Consulta el horario de clases y pide tu pase de un día gratis.">
+  <meta name="theme-color" content="#0c0d0f">
+
+  <!-- Vista previa al compartir en WhatsApp y redes sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PULSO Club Deportivo · Entrena todo en un solo lugar">
+  <meta property="og:description" content="Hyrox, fuerza, box, HIIT y spinning en tres sucursales de la CDMX.">
+  <meta property="og:image" content="assets/img/og-image.svg">
+  <meta property="og:locale" content="es_MX">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700;800&display=swap">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script type="module" src="assets/js/main.js"></script>
+
+  <!-- Datos estructurados: el club y sus sucursales -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "PULSO Club Deportivo",
+    "telephone": "+52 55 4821 9637",
+    "email": "hola@pulsoclub.mx",
+    "department": [
+      { "@type": "ExerciseGym", "name": "PULSO Roma Norte", "address": { "@type": "PostalAddress", "streetAddress": "Av. Álvaro Obregón 210, Roma Norte", "addressLocality": "Ciudad de México", "postalCode": "06700", "addressCountry": "MX" } },
+      { "@type": "ExerciseGym", "name": "PULSO Del Valle", "address": { "@type": "PostalAddress", "streetAddress": "Av. Insurgentes Sur 1580, Del Valle", "addressLocality": "Ciudad de México", "postalCode": "03100", "addressCountry": "MX" } },
+      { "@type": "ExerciseGym", "name": "PULSO Santa Fe", "address": { "@type": "PostalAddress", "streetAddress": "Av. Vasco de Quiroga 3200, Santa Fe", "addressLocality": "Ciudad de México", "postalCode": "01219", "addressCountry": "MX" } }
+    ],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "05:30", "closes": "23:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "16:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ ENCABEZADO ============ -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio" aria-label="PULSO Club Deportivo, ir al inicio">
+        <img class="brand__logo" src="assets/img/logo.svg" alt="" width="40" height="40">
+        <span class="brand__name">PULSO <span class="brand__role">CLUB DEPORTIVO</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" data-nav-toggle>
+        <span class="visually-hidden">Abrir menú</span>
+        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#menu"></use></svg>
+      </button>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Principal" data-nav>
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#disciplinas">Disciplinas</a></li>
+          <li><a class="site-nav__link" href="#hyrox">Hyrox</a></li>
+          <li><a class="site-nav__link" href="#horario">Horario</a></li>
+          <li><a class="site-nav__link" href="#membresias">Membresías</a></li>
+          <li><a class="site-nav__link" href="#sucursales">Sucursales</a></li>
+        </ul>
+        <a class="button button--primary button--sm" href="#pase-gratis">Pase gratis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <figure class="media" data-slot="hero"><img src="images/hero.jpg" alt="Atleta empujando un trineo con peso en la zona Hyrox de PULSO" width="1536" height="1024" fetchpriority="high"></figure>
+      <div class="container">
+        <p class="eyebrow">Club deportivo · CDMX</p>
+        <h1 class="hero__title">Entrena todo. <em>En un solo lugar.</em></h1>
+        <p class="hero__lead">Hyrox, fuerza, box, HIIT y spinning con coaches certificados en Roma Norte, Del Valle y Santa Fe.</p>
+        <div class="hero__actions">
+          <a class="button button--primary button--lg" href="#pase-gratis">Pase de 1 día gratis</a>
+          <a class="button button--outline button--lg" href="#horario">Ver horario</a>
+        </div>
+        <ul class="hero__stats">
+          <li><strong>3</strong> sucursales</li>
+          <li><strong>36</strong> clases por semana</li>
+          <li><strong>5:30</strong> abrimos entre semana</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cinta de disciplinas: el segundo grupo repite el primero para que el ciclo sea continuo -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <ul class="marquee__group"><li>Hyrox</li><li>Fuerza</li><li>Box</li><li>HIIT</li><li>Spinning</li><li>Zona de recuperación</li><li>Coaches certificados</li><li>3 sucursales</li></ul>
+        <ul class="marquee__group"><li>Hyrox</li><li>Fuerza</li><li>Box</li><li>HIIT</li><li>Spinning</li><li>Zona de recuperación</li><li>Coaches certificados</li><li>3 sucursales</li></ul>
+      </div>
+    </div>
+
+    <!-- ============ DISCIPLINAS ============ -->
+    <section class="section" id="disciplinas" aria-labelledby="disciplinas-titulo">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Disciplinas</p>
+          <h2 class="section__title" id="disciplinas-titulo">Elige cómo <em>quieres sudar</em></h2>
+        </header>
+        <!-- Intensidad: style="--level: 1…5". "Ver clases" filtra el horario por esa disciplina (data-schedule-preset). -->
+        <ul class="disciplines">
+          <li class="discipline discipline--featured">
+            <figure class="media" data-slot="disciplina-hyrox"><img src="images/disciplina-hyrox.jpg" alt="Atleta haciendo wall balls frente a un muro en la zona Hyrox" width="1024" height="1024" loading="lazy"></figure>
+            <h3 class="discipline__title">Hyrox</h3>
+            <p class="discipline__text">Correr, empujar, jalar y cargar. Entrena para la carrera de fitness que se compite en todo el mundo.</p>
+            <div class="discipline__meta">
+              <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">Intensidad</span>
+              <a class="discipline__link" href="#horario" data-schedule-preset="hyrox">Ver clases →</a>
+            </div>
+          </li>
+          <li class="discipline discipline--wide">
+            <figure class="media" data-slot="disciplina-fuerza"><img src="images/disciplina-fuerza.jpg" alt="Atleta levantando una barra olímpica en el piso de pesas" width="1536" height="1024" loading="lazy"></figure>
+            <h3 class="discipline__title">Fuerza</h3>
+            <p class="discipline__text">Racks, plataformas y mancuernas hasta 50 kg, con clases de técnica de levantamiento.</p>
+            <div class="discipline__meta">
+              <span class="intensity" style="--level: 4" aria-label="Intensidad 4 de 5">Intensidad</span>
+              <a class="discipline__link" href="#horario" data-schedule-preset="fuerza">Ver clases →</a>
+            </div>
+          </li>
+          <li class="discipline">
+            <figure class="media" data-slot="disciplina-box"><img src="images/disciplina-box.jpg" alt="Boxeadora golpeando un costal con guantes rojos" width="1024" height="1024" loading="lazy"></figure>
+            <h3 class="discipline__title">Box</h3>
+            <p class="discipline__text">Técnica, costal y sparring opcional en ring profesional.</p>
+            <div class="discipline__meta">
+              <span class="intensity" style="--level: 4" aria-label="Intensidad 4 de 5">Intensidad</span>
+              <a class="discipline__link" href="#horario" data-schedule-preset="box">Ver clases →</a>
+            </div>
+          </li>
+          <li class="discipline">
+            <figure class="media" data-slot="disciplina-hiit"><img src="images/disciplina-hiit.jpg" alt="Grupo haciendo burpees en una clase de HIIT" width="1024" height="1024" loading="lazy"></figure>
+            <h3 class="discipline__title">HIIT</h3>
+            <p class="discipline__text">45 minutos por intervalos. Sales empapado y con el día por delante.</p>
+            <div class="discipline__meta">
+              <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">Intensidad</span>
+              <a class="discipline__link" href="#horario" data-schedule-preset="hiit">Ver clases →</a>
+            </div>
+          </li>
+          <li class="discipline discipline--wide">
+            <figure class="media" data-slot="disciplina-spinning"><img src="images/disciplina-spinning.jpg" alt="Salón de spinning con luces de colores y ciclistas en movimiento" width="1536" height="1024" loading="lazy"></figure>
+            <h3 class="discipline__title">Spinning</h3>
+            <p class="discipline__text">Bicis con potenciómetro, luces y la mejor música del club.</p>
+            <div class="discipline__meta">
+              <span class="intensity" style="--level: 3" aria-label="Intensidad 3 de 5">Intensidad</span>
+              <a class="discipline__link" href="#horario" data-schedule-preset="spinning">Ver clases →</a>
+            </div>
+          </li>
+          <li class="discipline discipline--cta">
+            <h3 class="discipline__title">¿No sabes por dónde empezar?</h3>
+            <p class="discipline__text">Agenda una valoración gratis con un coach y te armamos un plan para tu objetivo.</p>
+            <a class="button button--dark" href="https://wa.me/525548219637?text=Hola%2C%20quiero%20agendar%20una%20valoraci%C3%B3n%20gratis%20en%20PULSO" data-contact="whatsapp" target="_blank" rel="noopener">Agendar valoración</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ HYROX ============ -->
+    <section class="section section--surface" id="hyrox" aria-labelledby="hyrox-titulo">
+      <div class="container hyrox">
+        <div class="hyrox__intro">
+          <p class="eyebrow">Hyrox</p>
+          <h2 class="section__title" id="hyrox-titulo">8 km. 8 estaciones. <em>Una meta.</em></h2>
+          <p>Hyrox combina carrera con ejercicios funcionales y se compite en todo el mundo. En PULSO tienes zona de entrenamiento con SkiErg, trineos y remos, clases para todos los niveles y un simulacro cada mes.</p>
+
+          <!-- Simulacro: data-countdown="last-saturday" (último sábado de cada mes) o "day-15" -->
+          <div class="countdown" data-countdown="last-saturday" data-countdown-time="08:00">
+            <p class="countdown__label">Próximo simulacro · Santa Fe</p>
+            <p class="countdown__date" data-countdown-date>Último sábado de cada mes, 8:00</p>
+            <ul class="countdown__units">
+              <li><span class="countdown__value" data-countdown-days>--</span><span class="countdown__unit">días</span></li>
+              <li><span class="countdown__value" data-countdown-hours>--</span><span class="countdown__unit">horas</span></li>
+              <li><span class="countdown__value" data-countdown-minutes>--</span><span class="countdown__unit">min</span></li>
+            </ul>
+            <a class="button button--primary button--sm" href="https://wa.me/525548219637?text=Hola%2C%20quiero%20inscribirme%20al%20pr%C3%B3ximo%20simulacro%20Hyrox%20de%20PULSO" data-contact="whatsapp" target="_blank" rel="noopener">Inscribirme al simulacro</a>
+          </div>
+
+          <div class="hyrox__visual">
+            <figure class="media" data-slot="hyrox-estaciones"><img src="images/hyrox-estaciones.jpg" alt="Atletas en la estación de remo durante un simulacro Hyrox" width="1536" height="1024" loading="lazy"></figure>
+          </div>
+        </div>
+
+        <!-- Antes de cada estación se corre 1 km (lo agrega el CSS) -->
+        <ol class="stations" aria-label="Las 8 estaciones de Hyrox">
+          <li class="station"><p class="station__name">SkiErg</p><p class="station__amount">1,000 m</p></li>
+          <li class="station"><p class="station__name">Sled push</p><p class="station__amount">50 m</p></li>
+          <li class="station"><p class="station__name">Sled pull</p><p class="station__amount">50 m</p></li>
+          <li class="station"><p class="station__name">Burpee broad jumps</p><p class="station__amount">80 m</p></li>
+          <li class="station"><p class="station__name">Remo</p><p class="station__amount">1,000 m</p></li>
+          <li class="station"><p class="station__name">Farmers carry</p><p class="station__amount">200 m</p></li>
+          <li class="station"><p class="station__name">Sandbag lunges</p><p class="station__amount">100 m</p></li>
+          <li class="station"><p class="station__name">Wall balls</p><p class="station__amount">100 repeticiones</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ HORARIO SEMANAL ============ -->
+    <section class="section" id="horario" aria-labelledby="horario-titulo">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Horario</p>
+          <h2 class="section__title" id="horario-titulo">Encuentra <em>tu clase</em></h2>
+          <p class="section__lead">Reserva tu lugar desde la app hasta 15 minutos antes de empezar.</p>
+        </header>
+
+        <!-- Para agregar una clase, copia un <li class="session"> dentro del día que toca.
+             data-discipline y data-branch deben coincidir con las opciones de los filtros. -->
+        <div class="schedule" data-schedule>
+          <div class="schedule__controls" data-schedule-controls hidden>
+            <div class="tabs" role="tablist" aria-label="Día de la semana">
+            <button class="tabs__tab" type="button" role="tab" data-day-tab="1" aria-selected="false" aria-label="Lunes">Lun</button>
+            <button class="tabs__tab" type="button" role="tab" data-day-tab="2" aria-selected="false" aria-label="Martes">Mar</button>
+            <button class="tabs__tab" type="button" role="tab" data-day-tab="3" aria-selected="false" aria-label="Miércoles">Mié</button>
+            <button class="tabs__tab" type="button" role="tab" data-day-tab="4" aria-selected="false" aria-label="Jueves">Jue</button>
+            <button class="tabs__tab" type="button" role="tab" data-day-tab="5" aria-selected="false" aria-label="Viernes">Vie</button>
+            <button class="tabs__tab" type="button" role="tab" data-day-tab="6" aria-selected="false" aria-label="Sábado">Sáb</button>
+            <button class="tabs__tab" type="button" role="tab" data-day-tab="0" aria-selected="false" aria-label="Domingo">Dom</button>
+            </div>
+            <div class="schedule__filters">
+              <label class="visually-hidden" for="filtro-disciplina">Disciplina</label>
+              <select class="form__control" id="filtro-disciplina" data-schedule-filter="discipline">
+                <option value="all">Todas las disciplinas</option>
+              <option value="hyrox">Hyrox</option>
+              <option value="fuerza">Fuerza</option>
+              <option value="box">Box</option>
+              <option value="hiit">HIIT</option>
+              <option value="spinning">Spinning</option>
+              </select>
+              <label class="visually-hidden" for="filtro-sucursal">Sucursal</label>
+              <select class="form__control" id="filtro-sucursal" data-schedule-filter="branch">
+                <option value="all">Todas las sucursales</option>
+              <option value="roma">Roma Norte</option>
+              <option value="delvalle">Del Valle</option>
+              <option value="santafe">Santa Fe</option>
+              </select>
+            </div>
+          </div>
+
+          <section class="schedule__day" data-day-panel="1" aria-label="Lunes">
+            <h3 class="schedule__day-title">Lunes</h3>
+            <ol class="schedule__list">
+              <li class="session" data-discipline="hyrox" data-branch="roma" data-start="06:00" data-end="07:00">
+                <p class="session__time">06:00<small>60 min</small></p>
+                <p class="session__name">Hyrox Engine</p>
+                <p class="session__coach">Coach Andrea Lozano</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+              <li class="session" data-discipline="hiit" data-branch="delvalle" data-start="07:00" data-end="07:45">
+                <p class="session__time">07:00<small>45 min</small></p>
+                <p class="session__name">HIIT 45</p>
+                <p class="session__coach">Coach Daniela Ibarra</p>
+                <p class="session__branch">Del Valle</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+              <li class="session" data-discipline="fuerza" data-branch="delvalle" data-start="09:00" data-end="10:00">
+                <p class="session__time">09:00<small>60 min</small></p>
+                <p class="session__name">Fuerza: técnica</p>
+                <p class="session__coach">Coach Luis Hernández</p>
+                <p class="session__branch">Del Valle</p>
+                <span class="intensity" style="--level: 3" aria-label="Intensidad 3 de 5">3/5</span>
+              </li>
+              <li class="session" data-discipline="spinning" data-branch="roma" data-start="13:00" data-end="13:45">
+                <p class="session__time">13:00<small>45 min</small></p>
+                <p class="session__name">Spin Ritmo</p>
+                <p class="session__coach">Coach Daniela Ibarra</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 3" aria-label="Intensidad 3 de 5">3/5</span>
+              </li>
+              <li class="session" data-discipline="box" data-branch="roma" data-start="19:00" data-end="20:00">
+                <p class="session__time">19:00<small>60 min</small></p>
+                <p class="session__name">Box fundamentos</p>
+                <p class="session__coach">Coach Marco Ruiz</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 4" aria-label="Intensidad 4 de 5">4/5</span>
+              </li>
+              <li class="session" data-discipline="hyrox" data-branch="santafe" data-start="20:00" data-end="21:00">
+                <p class="session__time">20:00<small>60 min</small></p>
+                <p class="session__name">Hyrox Stations</p>
+                <p class="session__coach">Coach Luis Hernández</p>
+                <p class="session__branch">Santa Fe</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+            </ol>
+          </section>
+          <section class="schedule__day" data-day-panel="2" aria-label="Martes">
+            <h3 class="schedule__day-title">Martes</h3>
+            <ol class="schedule__list">
+              <li class="session" data-discipline="spinning" data-branch="santafe" data-start="06:00" data-end="06:45">
+                <p class="session__time">06:00<small>45 min</small></p>
+                <p class="session__name">Spin & Climb</p>
+                <p class="session__coach">Coach Daniela Ibarra</p>
+                <p class="session__branch">Santa Fe</p>
+                <span class="intensity" style="--level: 4" aria-label="Intensidad 4 de 5">4/5</span>
+              </li>
+              <li class="session" data-discipline="fuerza" data-branch="santafe" data-start="07:00" data-end="08:00">
+                <p class="session__time">07:00<small>60 min</small></p>
+                <p class="session__name">Fuerza: técnica</p>
+                <p class="session__coach">Coach Luis Hernández</p>
+                <p class="session__branch">Santa Fe</p>
+                <span class="intensity" style="--level: 3" aria-label="Intensidad 3 de 5">3/5</span>
+              </li>
+              <li class="session" data-discipline="hiit" data-branch="roma" data-start="12:00" data-end="12:45">
+                <p class="session__time">12:00<small>45 min</small></p>
+                <p class="session__name">HIIT 45</p>
+                <p class="session__coach">Coach Andrea Lozano</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+              <li class="session" data-discipline="hyrox" data-branch="santafe" data-start="18:00" data-end="19:00">
+                <p class="session__time">18:00<small>60 min</small></p>
+                <p class="session__name">Hyrox Engine</p>
+                <p class="session__coach">Coach Andrea Lozano</p>
+                <p class="session__branch">Santa Fe</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+              <li class="session" data-discipline="box" data-branch="roma" data-start="19:00" data-end="20:00">
+                <p class="session__time">19:00<small>60 min</small></p>
+                <p class="session__name">Box sparring</p>
+                <p class="session__coach">Coach Marco Ruiz</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+              <li class="session" data-discipline="spinning" data-branch="delvalle" data-start="20:00" data-end="20:45">
+                <p class="session__time">20:00<small>45 min</small></p>
+                <p class="session__name">Spin Ritmo</p>
+                <p class="session__coach">Coach Daniela Ibarra</p>
+                <p class="session__branch">Del Valle</p>
+                <span class="intensity" style="--level: 3" aria-label="Intensidad 3 de 5">3/5</span>
+              </li>
+            </ol>
+          </section>
+          <section class="schedule__day" data-day-panel="3" aria-label="Miércoles">
+            <h3 class="schedule__day-title">Miércoles</h3>
+            <ol class="schedule__list">
+              <li class="session" data-discipline="hyrox" data-branch="roma" data-start="06:00" data-end="07:00">
+                <p class="session__time">06:00<small>60 min</small></p>
+                <p class="session__name">Hyrox Engine</p>
+                <p class="session__coach">Coach Andrea Lozano</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+              <li class="session" data-discipline="hiit" data-branch="delvalle" data-start="07:00" data-end="07:45">
+                <p class="session__time">07:00<small>45 min</small></p>
+                <p class="session__name">HIIT 45</p>
+                <p class="session__coach">Coach Daniela Ibarra</p>
+                <p class="session__branch">Del Valle</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+              <li class="session" data-discipline="fuerza" data-branch="delvalle" data-start="09:00" data-end="10:00">
+                <p class="session__time">09:00<small>60 min</small></p>
+                <p class="session__name">Fuerza: técnica</p>
+                <p class="session__coach">Coach Luis Hernández</p>
+                <p class="session__branch">Del Valle</p>
+                <span class="intensity" style="--level: 3" aria-label="Intensidad 3 de 5">3/5</span>
+              </li>
+              <li class="session" data-discipline="spinning" data-branch="roma" data-start="13:00" data-end="13:45">
+                <p class="session__time">13:00<small>45 min</small></p>
+                <p class="session__name">Spin Ritmo</p>
+                <p class="session__coach">Coach Daniela Ibarra</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 3" aria-label="Intensidad 3 de 5">3/5</span>
+              </li>
+              <li class="session" data-discipline="box" data-branch="roma" data-start="19:00" data-end="20:00">
+                <p class="session__time">19:00<small>60 min</small></p>
+                <p class="session__name">Box fundamentos</p>
+                <p class="session__coach">Coach Marco Ruiz</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 4" aria-label="Intensidad 4 de 5">4/5</span>
+              </li>
+              <li class="session" data-discipline="hyrox" data-branch="santafe" data-start="20:00" data-end="21:00">
+                <p class="session__time">20:00<small>60 min</small></p>
+                <p class="session__name">Hyrox Stations</p>
+                <p class="session__coach">Coach Luis Hernández</p>
+                <p class="session__branch">Santa Fe</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+            </ol>
+          </section>
+          <section class="schedule__day" data-day-panel="4" aria-label="Jueves">
+            <h3 class="schedule__day-title">Jueves</h3>
+            <ol class="schedule__list">
+              <li class="session" data-discipline="spinning" data-branch="santafe" data-start="06:00" data-end="06:45">
+                <p class="session__time">06:00<small>45 min</small></p>
+                <p class="session__name">Spin & Climb</p>
+                <p class="session__coach">Coach Daniela Ibarra</p>
+                <p class="session__branch">Santa Fe</p>
+                <span class="intensity" style="--level: 4" aria-label="Intensidad 4 de 5">4/5</span>
+              </li>
+              <li class="session" data-discipline="fuerza" data-branch="santafe" data-start="07:00" data-end="08:00">
+                <p class="session__time">07:00<small>60 min</small></p>
+                <p class="session__name">Fuerza: técnica</p>
+                <p class="session__coach">Coach Luis Hernández</p>
+                <p class="session__branch">Santa Fe</p>
+                <span class="intensity" style="--level: 3" aria-label="Intensidad 3 de 5">3/5</span>
+              </li>
+              <li class="session" data-discipline="hiit" data-branch="roma" data-start="12:00" data-end="12:45">
+                <p class="session__time">12:00<small>45 min</small></p>
+                <p class="session__name">HIIT 45</p>
+                <p class="session__coach">Coach Andrea Lozano</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+              <li class="session" data-discipline="hyrox" data-branch="santafe" data-start="18:00" data-end="19:00">
+                <p class="session__time">18:00<small>60 min</small></p>
+                <p class="session__name">Hyrox Engine</p>
+                <p class="session__coach">Coach Andrea Lozano</p>
+                <p class="session__branch">Santa Fe</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+              <li class="session" data-discipline="box" data-branch="roma" data-start="19:00" data-end="20:00">
+                <p class="session__time">19:00<small>60 min</small></p>
+                <p class="session__name">Box sparring</p>
+                <p class="session__coach">Coach Marco Ruiz</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+              <li class="session" data-discipline="spinning" data-branch="delvalle" data-start="20:00" data-end="20:45">
+                <p class="session__time">20:00<small>45 min</small></p>
+                <p class="session__name">Spin Ritmo</p>
+                <p class="session__coach">Coach Daniela Ibarra</p>
+                <p class="session__branch">Del Valle</p>
+                <span class="intensity" style="--level: 3" aria-label="Intensidad 3 de 5">3/5</span>
+              </li>
+            </ol>
+          </section>
+          <section class="schedule__day" data-day-panel="5" aria-label="Viernes">
+            <h3 class="schedule__day-title">Viernes</h3>
+            <ol class="schedule__list">
+              <li class="session" data-discipline="hyrox" data-branch="roma" data-start="06:00" data-end="07:00">
+                <p class="session__time">06:00<small>60 min</small></p>
+                <p class="session__name">Hyrox Engine</p>
+                <p class="session__coach">Coach Andrea Lozano</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+              <li class="session" data-discipline="hiit" data-branch="delvalle" data-start="07:00" data-end="07:45">
+                <p class="session__time">07:00<small>45 min</small></p>
+                <p class="session__name">HIIT 45</p>
+                <p class="session__coach">Coach Daniela Ibarra</p>
+                <p class="session__branch">Del Valle</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+              <li class="session" data-discipline="fuerza" data-branch="delvalle" data-start="09:00" data-end="10:00">
+                <p class="session__time">09:00<small>60 min</small></p>
+                <p class="session__name">Fuerza: técnica</p>
+                <p class="session__coach">Coach Luis Hernández</p>
+                <p class="session__branch">Del Valle</p>
+                <span class="intensity" style="--level: 3" aria-label="Intensidad 3 de 5">3/5</span>
+              </li>
+              <li class="session" data-discipline="spinning" data-branch="roma" data-start="13:00" data-end="13:45">
+                <p class="session__time">13:00<small>45 min</small></p>
+                <p class="session__name">Spin Ritmo</p>
+                <p class="session__coach">Coach Daniela Ibarra</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 3" aria-label="Intensidad 3 de 5">3/5</span>
+              </li>
+              <li class="session" data-discipline="box" data-branch="roma" data-start="19:00" data-end="20:00">
+                <p class="session__time">19:00<small>60 min</small></p>
+                <p class="session__name">Box fundamentos</p>
+                <p class="session__coach">Coach Marco Ruiz</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 4" aria-label="Intensidad 4 de 5">4/5</span>
+              </li>
+              <li class="session" data-discipline="hyrox" data-branch="santafe" data-start="20:00" data-end="21:00">
+                <p class="session__time">20:00<small>60 min</small></p>
+                <p class="session__name">Hyrox Stations</p>
+                <p class="session__coach">Coach Luis Hernández</p>
+                <p class="session__branch">Santa Fe</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+            </ol>
+          </section>
+          <section class="schedule__day" data-day-panel="6" aria-label="Sábado">
+            <h3 class="schedule__day-title">Sábado</h3>
+            <ol class="schedule__list">
+              <li class="session" data-discipline="hyrox" data-branch="santafe" data-start="08:00" data-end="09:30">
+                <p class="session__time">08:00<small>90 min</small></p>
+                <p class="session__name">Hyrox Team WOD</p>
+                <p class="session__coach">Coach Andrea y Luis</p>
+                <p class="session__branch">Santa Fe</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+              <li class="session" data-discipline="box" data-branch="roma" data-start="09:00" data-end="10:00">
+                <p class="session__time">09:00<small>60 min</small></p>
+                <p class="session__name">Box fundamentos</p>
+                <p class="session__coach">Coach Marco Ruiz</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 4" aria-label="Intensidad 4 de 5">4/5</span>
+              </li>
+              <li class="session" data-discipline="hiit" data-branch="delvalle" data-start="10:00" data-end="10:45">
+                <p class="session__time">10:00<small>45 min</small></p>
+                <p class="session__name">HIIT 45</p>
+                <p class="session__coach">Coach Daniela Ibarra</p>
+                <p class="session__branch">Del Valle</p>
+                <span class="intensity" style="--level: 5" aria-label="Intensidad 5 de 5">5/5</span>
+              </li>
+              <li class="session" data-discipline="spinning" data-branch="roma" data-start="11:00" data-end="11:45">
+                <p class="session__time">11:00<small>45 min</small></p>
+                <p class="session__name">Spin Ritmo</p>
+                <p class="session__coach">Coach Daniela Ibarra</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 3" aria-label="Intensidad 3 de 5">3/5</span>
+              </li>
+            </ol>
+          </section>
+          <section class="schedule__day" data-day-panel="0" aria-label="Domingo">
+            <h3 class="schedule__day-title">Domingo</h3>
+            <ol class="schedule__list">
+              <li class="session" data-discipline="spinning" data-branch="roma" data-start="09:00" data-end="10:00">
+                <p class="session__time">09:00<small>60 min</small></p>
+                <p class="session__name">Spin & Climb</p>
+                <p class="session__coach">Coach Daniela Ibarra</p>
+                <p class="session__branch">Roma Norte</p>
+                <span class="intensity" style="--level: 4" aria-label="Intensidad 4 de 5">4/5</span>
+              </li>
+              <li class="session" data-discipline="fuerza" data-branch="delvalle" data-start="10:00" data-end="11:00">
+                <p class="session__time">10:00<small>60 min</small></p>
+                <p class="session__name">Fuerza: técnica</p>
+                <p class="session__coach">Coach Luis Hernández</p>
+                <p class="session__branch">Del Valle</p>
+                <span class="intensity" style="--level: 3" aria-label="Intensidad 3 de 5">3/5</span>
+              </li>
+            </ol>
+          </section>
+          <p class="schedule__empty" data-schedule-empty hidden>No hay clases con esos filtros este día. Prueba otro día u otra sucursal.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSTALACIONES ============ -->
+    <section class="section section--surface" id="instalaciones" aria-labelledby="instalaciones-titulo">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Instalaciones</p>
+          <h2 class="section__title" id="instalaciones-titulo">El club <em>por dentro</em></h2>
+        </header>
+        <div class="facilities">
+          <div class="facility facility--main">
+            <figure class="media" data-slot="instalacion-1"><img src="images/instalacion-1.jpg" alt="Piso de pesas con racks, plataformas y mancuernas" width="1536" height="1024" loading="lazy"></figure>
+            <p class="facility__label">Piso de pesas</p>
+          </div>
+          <div class="facility">
+            <figure class="media" data-slot="instalacion-2"><img src="images/instalacion-2.jpg" alt="Zona de recuperación con tinas de hielo y rodillos de estiramiento" width="1536" height="1024" loading="lazy"></figure>
+            <p class="facility__label">Recuperación</p>
+          </div>
+          <div class="facility">
+            <figure class="media" data-slot="instalacion-3"><img src="images/instalacion-3.jpg" alt="Vestidores con lockers de madera y regaderas" width="1536" height="1024" loading="lazy"></figure>
+            <p class="facility__label">Vestidores con vapor</p>
+          </div>
+        </div>
+        <ul class="amenities">
+          <li>Estacionamiento <span>En Del Valle y Santa Fe</span></li>
+          <li>App de reservas <span>Aparta tu lugar en clase</span></li>
+          <li>Valoración InBody <span>Mide tu progreso cada mes</span></li>
+          <li>Nutrióloga <span>Planes de alimentación</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ MEMBRESÍAS ============ -->
+    <section class="section" id="membresias" aria-labelledby="membresias-titulo">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Membresías</p>
+          <h2 class="section__title" id="membresias-titulo">Sin inscripción <em>este mes</em></h2>
+          <p class="section__lead">Precios por mes. Con el pago anual te regalamos dos meses.</p>
+        </header>
+
+        <!-- Cada precio lleva data-monthly y data-yearly; el interruptor los cambia -->
+        <div class="billing" role="group" aria-label="Forma de pago" data-billing-group hidden>
+          <button class="billing__option" type="button" data-billing="monthly" aria-pressed="true">Mensual</button>
+          <button class="billing__option" type="button" data-billing="yearly" aria-pressed="false">Anual <span class="billing__save">−2 meses</span></button>
+        </div>
+
+        <ul class="plans">
+          <li class="plan">
+            <h3 class="plan__name">Esencial</h3>
+            <p class="plan__price"><span data-monthly="$899" data-yearly="$749">$899</span> <small>/ mes</small></p>
+            <p class="plan__note" data-monthly="Sin plazo forzoso" data-yearly="Pago anual de $8,990">Sin plazo forzoso</p>
+            <ul class="plan__features">
+              <li>Piso de pesas y cardio</li>
+              <li class="is-excluded">Clases de box, HIIT y spinning</li>
+              <li class="is-excluded">Zona y clases Hyrox</li>
+              <li class="is-excluded">Acceso a las 3 sucursales</li>
+              <li class="is-excluded">Valoración InBody mensual, toalla y locker</li>
+            </ul>
+            <a class="button button--outline" href="https://wa.me/525548219637?text=Hola%2C%20me%20interesa%20la%20membres%C3%ADa%20Esencial%20de%20PULSO" data-contact="whatsapp" target="_blank" rel="noopener">Quiero este plan</a>
+          </li>
+          <li class="plan plan--featured">
+            <span class="plan__badge">El más elegido</span>
+            <h3 class="plan__name">Total</h3>
+            <p class="plan__price"><span data-monthly="$1,299" data-yearly="$1,083">$1,299</span> <small>/ mes</small></p>
+            <p class="plan__note" data-monthly="Sin plazo forzoso" data-yearly="Pago anual de $12,990">Sin plazo forzoso</p>
+            <ul class="plan__features">
+              <li>Piso de pesas y cardio</li>
+              <li>Clases de box, HIIT y spinning</li>
+              <li class="is-excluded">Zona y clases Hyrox</li>
+              <li class="is-excluded">Acceso a las 3 sucursales</li>
+              <li class="is-excluded">Valoración InBody mensual, toalla y locker</li>
+            </ul>
+            <a class="button button--primary" href="https://wa.me/525548219637?text=Hola%2C%20me%20interesa%20la%20membres%C3%ADa%20Total%20de%20PULSO" data-contact="whatsapp" target="_blank" rel="noopener">Quiero este plan</a>
+          </li>
+          <li class="plan">
+            <h3 class="plan__name">Élite</h3>
+            <p class="plan__price"><span data-monthly="$1,799" data-yearly="$1,499">$1,799</span> <small>/ mes</small></p>
+            <p class="plan__note" data-monthly="Sin plazo forzoso" data-yearly="Pago anual de $17,990">Sin plazo forzoso</p>
+            <ul class="plan__features">
+              <li>Piso de pesas y cardio</li>
+              <li>Clases de box, HIIT y spinning</li>
+              <li>Zona y clases Hyrox</li>
+              <li>Acceso a las 3 sucursales</li>
+              <li>Valoración InBody mensual, toalla y locker</li>
+            </ul>
+            <a class="button button--outline" href="https://wa.me/525548219637?text=Hola%2C%20me%20interesa%20la%20membres%C3%ADa%20%C3%89lite%20de%20PULSO" data-contact="whatsapp" target="_blank" rel="noopener">Quiero este plan</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ COACHES ============ -->
+    <section class="section section--surface" id="coaches" aria-labelledby="coaches-titulo">
+      <div class="container coaches__header">
+        <div>
+          <p class="eyebrow">Coaches</p>
+          <h2 class="section__title" id="coaches-titulo">Te van a <em>exigir</em></h2>
+        </div>
+        <p class="coaches__hint" aria-hidden="true">Desliza →</p>
+      </div>
+      <ul class="coaches__track">
+        <li class="coach">
+          <figure class="media media--portrait" data-slot="coach-1"><img src="images/coach-1.jpg" alt="Retrato de la coach Andrea Lozano" width="1024" height="1536" loading="lazy"></figure>
+          <h3 class="coach__name">Andrea Lozano</h3>
+          <p class="coach__role">Head coach Hyrox · 3 carreras internacionales</p>
+          <ul class="coach__tags"><li>Hyrox</li><li>HIIT</li></ul>
+        </li>
+        <li class="coach">
+          <figure class="media media--portrait" data-slot="coach-2"><img src="images/coach-2.jpg" alt="Retrato del coach Marco Ruiz con guantes de box" width="1024" height="1536" loading="lazy"></figure>
+          <h3 class="coach__name">Marco Ruiz</h3>
+          <p class="coach__role">Exboxeador amateur, 12 años en el ring</p>
+          <ul class="coach__tags"><li>Box</li></ul>
+        </li>
+        <li class="coach">
+          <figure class="media media--portrait" data-slot="coach-3"><img src="images/coach-3.jpg" alt="Retrato de la coach Daniela Ibarra" width="1024" height="1536" loading="lazy"></figure>
+          <h3 class="coach__name">Daniela Ibarra</h3>
+          <p class="coach__role">Instructora de ciclismo indoor y HIIT</p>
+          <ul class="coach__tags"><li>Spinning</li><li>HIIT</li></ul>
+        </li>
+        <li class="coach">
+          <figure class="media media--portrait" data-slot="coach-4"><img src="images/coach-4.jpg" alt="Retrato del coach Luis Hernández junto a una barra olímpica" width="1024" height="1536" loading="lazy"></figure>
+          <h3 class="coach__name">Luis Hernández</h3>
+          <p class="coach__role">Entrenador de halterofilia y fuerza</p>
+          <ul class="coach__tags"><li>Fuerza</li><li>Hyrox</li></ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ SUCURSALES ============ -->
+    <section class="section" id="sucursales" aria-labelledby="sucursales-titulo">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Sucursales</p>
+          <h2 class="section__title" id="sucursales-titulo">Tres clubes, <em>una membresía</em></h2>
+        </header>
+
+        <!-- Cada sucursal es un panel con su propio horario ([data-hours-scope]) -->
+        <div data-tabs>
+          <div class="tabs branches__tabs" role="tablist" aria-label="Sucursales" hidden>
+          <button class="tabs__tab" type="button" role="tab" data-tab="roma" aria-selected="false">Roma Norte</button>
+          <button class="tabs__tab" type="button" role="tab" data-tab="delvalle" aria-selected="false">Del Valle</button>
+          <button class="tabs__tab" type="button" role="tab" data-tab="santafe" aria-selected="false">Santa Fe</button>
+          </div>
+        <article class="branch contact" data-tab-panel="roma" data-hours-scope aria-labelledby="sucursal-roma">
+          <div class="contact__info">
+            <p class="status-badge" data-open-status hidden></p>
+            <h3 class="branch__name" id="sucursal-roma">PULSO Roma Norte</h3>
+            <ul class="contact-list">
+              <li class="contact-list__item">
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#pin"></use></svg>
+                <span>Av. Álvaro Obregón 210, Roma Norte, Cuauhtémoc, CDMX</span>
+              </li>
+              <li class="contact-list__item">
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#phone"></use></svg>
+                <a href="tel:+525548219637" data-contact="phone">55 4821 9637</a>
+              </li>
+            </ul>
+            <ul class="branch__services"><li>Zona Hyrox</li><li>Ring de box</li><li>Salón de spinning</li><li>Vapor</li></ul>
+            <!-- Horario: data-days usa 0 = domingo … 6 = sábado; horas en formato 24 h -->
+            <p class="contact__subtitle">Horario</p>
+            <table class="hours" data-hours>
+              <tbody>
+                <tr data-days="1,2,3,4,5" data-open="05:30" data-close="23:00">
+                  <th scope="row">Lunes a viernes</th>
+                  <td>5:30 a 23:00</td>
+                </tr>
+                <tr data-days="6" data-open="07:00" data-close="20:00">
+                  <th scope="row">Sábado</th>
+                  <td>7:00 a 20:00</td>
+                </tr>
+                <tr data-days="0" data-open="08:00" data-close="16:00">
+                  <th scope="row">Domingo</th>
+                  <td>8:00 a 16:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="contact__visual">
+            <figure class="media" data-slot="sucursal-roma"><img src="images/sucursal-roma.jpg" alt="Fachada de PULSO Roma Norte en una esquina arbolada con edificios art déco" width="1536" height="1024" loading="lazy"></figure>
+          </div>
+          <div class="contact__map">
+            <iframe title="Ubicación de PULSO Roma Norte en el mapa" src="https://www.google.com/maps?q=Av.+%C3%81lvaro+Obreg%C3%B3n+210+Roma+Norte+CDMX&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </article>
+        <article class="branch contact" data-tab-panel="delvalle" data-hours-scope aria-labelledby="sucursal-delvalle">
+          <div class="contact__info">
+            <p class="status-badge" data-open-status hidden></p>
+            <h3 class="branch__name" id="sucursal-delvalle">PULSO Del Valle</h3>
+            <ul class="contact-list">
+              <li class="contact-list__item">
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#pin"></use></svg>
+                <span>Av. Insurgentes Sur 1580, Del Valle, Benito Juárez, CDMX</span>
+              </li>
+              <li class="contact-list__item">
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#phone"></use></svg>
+                <a href="tel:+525548219637" data-contact="phone">55 4821 9637</a>
+              </li>
+            </ul>
+            <ul class="branch__services"><li>Piso de pesas en dos niveles</li><li>Salón de HIIT</li><li>Estacionamiento</li><li>Nutrióloga</li></ul>
+            <!-- Horario: data-days usa 0 = domingo … 6 = sábado; horas en formato 24 h -->
+            <p class="contact__subtitle">Horario</p>
+            <table class="hours" data-hours>
+              <tbody>
+                <tr data-days="1,2,3,4,5" data-open="05:30" data-close="23:00">
+                  <th scope="row">Lunes a viernes</th>
+                  <td>5:30 a 23:00</td>
+                </tr>
+                <tr data-days="6" data-open="07:00" data-close="20:00">
+                  <th scope="row">Sábado</th>
+                  <td>7:00 a 20:00</td>
+                </tr>
+                <tr data-days="0" data-open="08:00" data-close="16:00">
+                  <th scope="row">Domingo</th>
+                  <td>8:00 a 16:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="contact__visual">
+            <figure class="media" data-slot="sucursal-delvalle"><img src="images/sucursal-delvalle.jpg" alt="Fachada de vidrio de PULSO Del Valle sobre Insurgentes" width="1536" height="1024" loading="lazy"></figure>
+          </div>
+          <div class="contact__map">
+            <iframe title="Ubicación de PULSO Del Valle en el mapa" src="https://www.google.com/maps?q=Insurgentes+Sur+1580+Del+Valle+CDMX&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </article>
+        <article class="branch contact" data-tab-panel="santafe" data-hours-scope aria-labelledby="sucursal-santafe">
+          <div class="contact__info">
+            <p class="status-badge" data-open-status hidden></p>
+            <h3 class="branch__name" id="sucursal-santafe">PULSO Santa Fe</h3>
+            <ul class="contact-list">
+              <li class="contact-list__item">
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#pin"></use></svg>
+                <span>Av. Vasco de Quiroga 3200, Santa Fe, Cuajimalpa, CDMX</span>
+              </li>
+              <li class="contact-list__item">
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#phone"></use></svg>
+                <a href="tel:+525548219637" data-contact="phone">55 4821 9637</a>
+              </li>
+            </ul>
+            <ul class="branch__services"><li>Zona Hyrox completa</li><li>Simulacros mensuales</li><li>Tinas de hielo</li><li>Estacionamiento</li></ul>
+            <!-- Horario: data-days usa 0 = domingo … 6 = sábado; horas en formato 24 h -->
+            <p class="contact__subtitle">Horario</p>
+            <table class="hours" data-hours>
+              <tbody>
+                <tr data-days="1,2,3,4,5" data-open="05:00" data-close="23:00">
+                  <th scope="row">Lunes a viernes</th>
+                  <td>5:00 a 23:00</td>
+                </tr>
+                <tr data-days="6" data-open="07:00" data-close="20:00">
+                  <th scope="row">Sábado</th>
+                  <td>7:00 a 20:00</td>
+                </tr>
+                <tr data-days="0" data-open="08:00" data-close="16:00">
+                  <th scope="row">Domingo</th>
+                  <td>8:00 a 16:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="contact__visual">
+            <figure class="media" data-slot="sucursal-santafe"><img src="images/sucursal-santafe.jpg" alt="Entrada de PULSO Santa Fe con los corporativos de fondo" width="1536" height="1024" loading="lazy"></figure>
+          </div>
+          <div class="contact__map">
+            <iframe title="Ubicación de PULSO Santa Fe en el mapa" src="https://www.google.com/maps?q=Vasco+de+Quiroga+3200+Santa+Fe+CDMX&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PASE GRATIS ============ -->
+    <section class="section section--accent" id="pase-gratis" aria-labelledby="pase-titulo">
+      <div class="container pass">
+        <div>
+          <p class="eyebrow">Pase de 1 día</p>
+          <h2 class="pass__title" id="pase-titulo">Tu primer día <em>va por nuestra cuenta</em></h2>
+          <p class="pass__text">Elige sucursal y disciplina. Te confirmamos por WhatsApp y te esperamos con toalla y un coach que te guíe.</p>
+        </div>
+
+        <!-- El texto del mensaje sale de data-message; {campo} se reemplaza por el valor de ese campo -->
+        <form class="pass__form form" data-whatsapp-form data-message="Hola, soy {nombre}. Quiero mi pase de 1 día gratis en PULSO {sucursal} para probar {disciplina}.">
+          <div class="form__field">
+            <label class="form__label" for="nombre">Nombre</label>
+            <input class="form__control" id="nombre" name="nombre" type="text" autocomplete="name" required>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="sucursal">Sucursal</label>
+            <select class="form__control" id="sucursal" name="sucursal">
+              <option>Roma Norte</option>
+              <option>Del Valle</option>
+              <option>Santa Fe</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="disciplina">¿Qué quieres probar?</label>
+            <select class="form__control" id="disciplina" name="disciplina">
+              <option>Hyrox</option>
+              <option>Fuerza</option>
+              <option>Box</option>
+              <option>HIIT</option>
+              <option>Spinning</option>
+              <option>de todo un poco</option>
+            </select>
+          </div>
+          <button class="button button--primary button--lg button--block" type="submit">
+            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#whatsapp"></use></svg>
+            Pedir mi pase por WhatsApp
+          </button>
+          <p class="form__note">Se abrirá WhatsApp con tu mensaje listo. Tus datos no se guardan en este sitio.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PIE DE PÁGINA ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__brand">PULSO</p>
+      <ul class="social-list">
+        <li><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#instagram"></use></svg></a></li>
+        <li><a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#facebook"></use></svg></a></li>
+      </ul>
+      <p>© <span data-current-year>2026</span> PULSO Club Deportivo. Todos los derechos reservados.</p>
+      <p class="site-footer__legal">HYROX es una marca registrada de su titular. Las clases de entrenamiento no están afiliadas a la competencia oficial.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/525548219637?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20PULSO" data-contact="whatsapp" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#whatsapp"></use></svg>
+  </a>
+</body>
+</html>
