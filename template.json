@@ -3,6 +3,7 @@
   "name": "Club deportivo / Gimnasio multidisciplina",
   "version": "1.0.0",
   "category": "deporte",
+  "uses": ["inscripciones"],
   "style": "Oscuro y enérgico: casi negro con verde lima neón; títulos en mayúsculas condensadas (Anton) y texto en Archivo.",
   "description": "Para gimnasios y clubes con varias disciplinas, clases grupales y una o más sucursales: horario semanal filtrable, membresías y pase gratis por WhatsApp.",
   "tags": [
