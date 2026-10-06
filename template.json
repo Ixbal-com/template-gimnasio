@@ -18,6 +18,7 @@
   ],
   "entry": "index.html",
   "preview": "preview.png",
+  "modules": ["tabs", "pricing-toggle", "countdown", "schedule", "whatsapp-form"],
   "sections": [
     "encabezado",
     "hero",
